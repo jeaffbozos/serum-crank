@@ -104,10 +104,10 @@ export const Cranker = () => {
           </div>
           <button
             type="submit"
-            disabled={isCranking || eventQueue.data?.length === 0}
+            disabled={eventQueue.data?.length === 0}
             className="w-full p-2 primary-btn focus-style"
           >
-            Crank
+            Crank {eventQueue.data?.length} {isCranking}
           </button>
         </form>
       )}
